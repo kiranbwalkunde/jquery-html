@@ -1,0 +1,132 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  /* Setting the default font size to 12px. */
+  font-size: 12px;
+}
+
+.container {
+  /* Align the Container to the center of the body. */
+  margin: 0 auto;
+  /* Applying the padding from right and left of 10px; */
+  padding: 10px 20px;
+
+  /* Applying some box shadow for better look and feel. */
+  -webkit-box-shadow: 0px 9px 30px -3px rgba(212,130,187,1);
+  -moz-box-shadow: 0px 9px 30px -3px rgba(212,130,187,1);
+  box-shadow: 0px 9px 30px -3px rgba(212,130,187,1);
+}
+
+@media(max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+@media(min-width: 1080px) {
+  .container {
+    width: 1080px;
+    max-width: 1080px;
+  }
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(56, 146, 211);
+  color: #fff;
+  padding: 20px 0px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.add-remove {
+  padding: 10px 0px;
+} 
+
+.align-right {
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+button {
+  color: #ffffff;
+  background-color: #0aad4b;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.header {
+  font-weight: bold;
+  border-right: 1px solid grey;
+}
+
+.table-header {
+  border-bottom: 1px solid grey;
+}
+
+
+.header, .value {
+  width: 150px;
+  max-width: 150px;
+  padding: 10px 5px;
+}
+
+.table-row:hover {
+  background-color: #e5e4f5;
+}
+
+.header:last-child {
+  border-right: none;
+  padding-right: 18px;
+}
+
+.table {
+  border: 1px solid grey;
+  word-wrap: break-word;
+  /* Applying the width as the table and its columns should have horizontal and vertical scroll. */
+  width: 1080px;
+}
+.table-body {
+  height: 400px;
+  max-height: 300px;
+  overflow: scroll;
+}
+
+@media(max-width: 768px) {
+  .container {
+    width: 600px;
+    max-width: 600px;
+  }
+  .table {
+    width: 600px;
+    max-width: 600px;
+    overflow: scroll;
+    margin: 0 auto;
+  }
+  .header, .value {
+    width: 80px;
+    max-width: 80px;
+  }
+  .header:last-child {
+    padding-right: 6px;
+  }
+  .table-body{
+    overflow: initial;
+  }
+}
+
+[role='button'] {
+  cursor: pointer;
+}
+
+.table-row:nth-child(even) {
+  background: #e5e5e5;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JQuery Module</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../styles/table.css">
+  </head>
+  <body>
+    <div class="body-container">
+      <div class="container">
+          <!--  The Section to take the heading part of the Pages portion. -->
+          <div class="heading text-center">
+            Welcome to record management
+          </div>
+          <div class="add-remove d-flex text-center">
+            <div class="col-6">
+              <button>Add Employee</button>
+            </div>
+            <div class="col-6">
+              <button>Remove Employee</button>
+            </div>
+          </div>
+          <div class="table">
+            <div class="table-header d-flex">
+              <div class="header text-center">First</div>
+              <div class="header text-center">Second</div>
+              <div class="header text-center">Third</div>
+              <div class="header text-center">Fourth</div>
+              <div class="header text-center">Fifth</div>
+              <div class="header text-center">Sixth</div>
+            </div>
+            <div class="table-body">
+              <div class="table-row d-flex">
+                <div class="value text-center">First</div>
+                <div class="value text-center">Second</div>
+                <div class="value text-center">Third</div>
+                <div class="value text-center">Fourth</div>
+                <div class="value text-center">Fifth</div>
+                <div class="value text-center">Sixth</div>
+              </div>
+              <div class="table-row d-flex">
+                <div class="value text-center">First</div>
+                <div class="value text-center">Second</div>
+                <div class="value text-center">Third</div>
+                <div class="value text-center">Fourth</div>
+                <div class="value text-center">Fifth</div>
+                <div class="value text-center">Sixth</div>
+              </div>
+              <div class="table-row d-flex">
+                <div class="value text-center">First</div>
+                <div class="value text-center">Second</div>
+                <div class="value text-center">Third</div>
+                <div class="value text-center">Fourth</div>
+                <div class="value text-center">Fifth</div>
+                <div class="value text-center">Sixth</div>
+              </div>
+              <div class="table-row d-flex">
+                <div class="value text-center">First</div>
+                <div class="value text-center">Second</div>
+                <div class="value text-center">Third</div>
+                <div class="value text-center">Fourth</div>
+                <div class="value text-center">Fifth</div>
+                <div class="value text-center">Sixth</div>
+              </div>
+              <div class="table-row d-flex">
+                  <div class="value text-center">First</div>
+                  <div class="value text-center">Second</div>
+                  <div class="value text-center">Third</div>
+                  <div class="value text-center">Fourth</div>
+                  <div class="value text-center">Fifth</div>
+                  <div class="value text-center">Sixth</div>
+              </div>
+              <div class="table-row d-flex">
+                  <div class="value text-center">First</div>
+                  <div class="value text-center">Second</div>
+                  <div class="value text-center">Third</div>
+                  <div class="value text-center">Fourth</div>
+                  <div class="value text-center">Fifth</div>
+                  <div class="value text-center">Sixth</div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  body {
+  font-family: 'Courier New', Courier, monospace;
+  /* Setting the default font size to 12px. */
+  font-size: 12px;
+}
+
+.container {
+  /* Align the Container to the center of the body. */
+  margin: 0 auto;
+  /* Applying the padding from right and left of 10px; */
+  padding: 10px 20px;
+
+  /* Applying some box shadow for better look and feel. */
+  -webkit-box-shadow: 0px 9px 30px -3px rgba(212,130,187,1);
+  -moz-box-shadow: 0px 9px 30px -3px rgba(212,130,187,1);
+  box-shadow: 0px 9px 30px -3px rgba(212,130,187,1);
+}
+
+@media(max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+@media(min-width: 1080px) {
+  .container {
+    width: 1080px;
+    max-width: 1080px;
+  }
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(56, 146, 211);
+  color: #fff;
+  padding: 20px 0px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.add-remove {
+  padding: 10px 0px;
+} 
+
+.d-flex {
+  display: flex;
+}
+
+button {
+  color: #ffffff;
+  background-color: #0aad4b;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.header {
+  font-weight: bold;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.header, .value {
+  width: 16.66%;
+  padding: 10px 0px;
+}
+
+.table-row:hover {
+  background-color: #e5e4f5;
+}
+
+.header:last-child {
+  border-right: none;
+  padding-right: 18px;
+}
+
+.table {
+  border: 1px solid grey;
+  word-wrap: break-word;
+}
+.table-body {
+  height: 400px;
+  max-height: 300px;
+  overflow: scroll;
+}
+
+</style>
