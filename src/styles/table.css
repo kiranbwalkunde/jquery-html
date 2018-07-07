@@ -63,22 +63,23 @@ button {
   border: none;
 }
 
-.header {
+.column-header {
   font-weight: bold;
   border-right: 1px solid grey;
 }
 
-.grid-header {
+.row-header {
   border-bottom: 1px solid grey;
 }
 
-.value {
+.column {
   border-left: 1px solid #c8bfbf;
 }
 
-.header, .value {
-  width: 150px;
-  max-width: 150px;
+.column-header, .column {
+  width: 20%;
+  /* width: 150px;
+  max-width: 150px; */
   padding: 10px 5px;
 }
 
@@ -86,7 +87,7 @@ button {
   background-color: #e5e4f5;
 }
 
-.header:last-child {
+.column-header:last-child {
   border-right: none;
   padding-right: 20px;
 }
@@ -109,16 +110,16 @@ button {
     max-width: 600px;
   } */
   .grid {
-    width: 600px;
-    max-width: 600px;
-    overflow: scroll;
+    /* width: 600px;
+    max-width: 600px; */
+    overflow: auto;
     margin: 0 auto;
   }
-  .header, .value {
+  .column-header, .column {
     width: 80px;
     max-width: 80px;
   }
-  .header:last-child {
+  .column-header:last-child {
     padding-right: 6px;
   }
   .grid-body{
