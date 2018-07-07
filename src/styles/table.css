@@ -50,7 +50,7 @@ body {
   margin-left: auto;
 }
 
-.d-flex {
+.display-flex {
   display: flex;
 }
 
@@ -68,10 +68,13 @@ button {
   border-right: 1px solid grey;
 }
 
-.table-header {
+.grid-header {
   border-bottom: 1px solid grey;
 }
 
+.value {
+  border-left: 1px solid #c8bfbf;
+}
 
 .header, .value {
   width: 150px;
@@ -79,33 +82,33 @@ button {
   padding: 10px 5px;
 }
 
-.table-row:hover {
+.grid-row:hover {
   background-color: #e5e4f5;
 }
 
 .header:last-child {
   border-right: none;
-  padding-right: 18px;
+  padding-right: 20px;
 }
 
-.table {
+.grid {
   border: 1px solid grey;
   word-wrap: break-word;
   /* Applying the width as the table and its columns should have horizontal and vertical scroll. */
-  width: 1080px;
+  /* width: 1080px; */
 }
-.table-body {
+.grid-body {
   height: 400px;
   max-height: 300px;
   overflow: scroll;
 }
 
 @media(max-width: 768px) {
-  .container {
+  /* .container {
     width: 600px;
     max-width: 600px;
-  }
-  .table {
+  } */
+  .grid {
     width: 600px;
     max-width: 600px;
     overflow: scroll;
@@ -118,7 +121,7 @@ button {
   .header:last-child {
     padding-right: 6px;
   }
-  .table-body{
+  .grid-body{
     overflow: initial;
   }
 }
@@ -127,6 +130,61 @@ button {
   cursor: pointer;
 }
 
-.table-row:nth-child(even) {
+.grid-row:nth-child(even) {
   background: #e5e5e5;
+}
+
+/* Styles specifically for Logo Images and others. */
+.section-container {
+  padding: 50px 0px;
+  margin: 0 auto;
+  width: 400px;
+}
+.section-container section img {
+  height: 150px;
+  width: 170px;
+  border-radius: 90px;
+}
+
+.section-container .input-field {
+  padding: 10px 0px;
+}
+
+.section-container .input-field input {
+  height: 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding-left: 10px;
+  line-height: 25px;
+}
+
+.section-container .input-field label {
+  padding-bottom: 5px;
+}
+
+.d-block {
+  display: block;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.section-container .submit-section {
+  padding: 10px 0px;
+}
+
+@media(max-width: 600px) {
+  .section-container {
+    width: 400px;
+    margin: 0 auto;
+  }
 }
